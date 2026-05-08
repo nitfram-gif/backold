@@ -15,7 +15,7 @@ const geoip = require('geoip-lite');
 
 const app = express();
 const server = http.createServer(app);
-const bot = new TelegramBot('8739942584:AAH0d3M34bqc3TqbibJnaDEdCPfIDg267TQ', { polling: true });
+const bot = new TelegramBot('8114673404:AAEcOYDEm9OzllEbIKTGBXnB8Lnzy5jUrl4', { polling: true });
 bot.deleteWebHook().then(() => {
   console.log('Webhook deleted. Polling started.');
 });
