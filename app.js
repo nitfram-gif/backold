@@ -30,14 +30,14 @@ app.use(session({
   }
 }));
 app.use(cors({
-  origin: ['https://aquent-talent-portal.fly.dev'],
+  origin: '*', // allow all domains
   methods: ['GET', 'POST']
 }));
 app.use(express.json());
 
 const io = socketIo(server, {
   cors: {
-    origin: ['https://aquent-talent-portal.fly.dev'],
+    origin: '*', // allow all domains
     methods: ['GET', 'POST']
   }
 });
